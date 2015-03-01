@@ -57,8 +57,6 @@ func (t *twitterServer) Add(ctx context.Context, tweet *pb.Tweet) (*pb.Ack, erro
 	if t.tweets[userID] == nil {
 		t.tweets[userID] = make([]*pb.Tweet, 0)
 	}
-
-	fmt.Println(t.tweets[userID])
 	t.tweets[userID] = append(t.tweets[userID], tweet)
 
 	return &pb.Ack{}, nil
