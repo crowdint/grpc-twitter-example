@@ -30,7 +30,7 @@ Got 5 tweets
 This example demonstrates an HTTP front-end, using [gin](https://github.com/gin-gonic/gin), which connects to the backend Twitter server via grpc.
 
 ```bash
-$ go run web.go
+$ go run web/main.go
 [GIN-debug] GET   /tweets/:user_id          --> main.func·001 (3 handlers)
 [GIN-debug] Listening and serving HTTP on :8080
 ```
